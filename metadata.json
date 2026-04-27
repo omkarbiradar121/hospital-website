@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Kazi Hospital",
+  "description": "A modern, professional healthcare website for Kazi Hospital, featuring doctor directories, appointment booking, patient portal, and emergency services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}

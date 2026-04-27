@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+
+  --color-hospital-primary: #0f172a; /* Slate 900 */
+  --color-hospital-secondary: #0d9488; /* Teal 600 */
+  --color-hospital-accent: #14b8a6; /* Teal 500 */
+  --color-hospital-bg: #f8fafc; /* Slate 50 */
+  --color-hospital-border: #e2e8f0; /* Slate 200 */
+  --color-hospital-slate: #1e293b; /* Slate 800 */
+  --color-hospital-muted: #64748b; /* Slate 500 */
+  
+  --radius-hospital: 0.75rem; /* rounded-xl approx */
+
+  --shadow-hospital-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-hospital-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-hospital-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-hospital-bg text-hospital-slate selection:bg-hospital-secondary selection:text-white transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
